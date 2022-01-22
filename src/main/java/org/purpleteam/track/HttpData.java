@@ -9,11 +9,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class HttpData {
-    private String httpMethod;
+    private String httpMethod = "GET";
     private Map<String, String> parameters;
     private List<String> headers;
     private String body;
-    private String url;
+    private String url = "localhost";
 
     public HttpData() {
         this.parameters = new HashMap<String, String>();
