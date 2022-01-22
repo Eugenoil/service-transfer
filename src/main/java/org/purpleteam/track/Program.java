@@ -1,13 +1,5 @@
 package org.purpleteam.track;
 
-import org.purpleteam.*;
-import org.jdom2.Element;
-import javax.xml.soap.SOAPBody;
-import javax.xml.soap.Node;
-import javax.xml.soap.SOAPMessage;
-import java.util.Iterator;
-import java.util.List;
-
 public class Program {
     /***
      * Example of creating listening server. Var <request> receive HttpData which contains
