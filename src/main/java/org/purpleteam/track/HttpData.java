@@ -83,7 +83,7 @@ public class HttpData {
                 if (method.length > 1)
                     setParameters(splitRequest(method[1]));
                 addHeader(line);
-                while (input.ready() && line != "") {
+                while (input.ready() && !line.equals("")) {
                     line = input.readLine();
                     addHeader(line);
                 }

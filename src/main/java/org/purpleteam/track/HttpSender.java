@@ -51,7 +51,9 @@ public class HttpSender {
             if (null != httpData && httpData.getHeaders().size() > 0)
                 for (String s : httpData.getHeaders())
                     output.println(s);
-            output.println();
+            else
+                output.println("Content-Type: application/soap+xml; charset=utf-8");
+            output.println("");
             if (null != httpData)
                 output.println(httpData.getBody());
             output.flush();
