@@ -21,6 +21,7 @@ public class HttpSender {
         idx = result.indexOf("/");
         if (idx > -1)
             result = result.substring(0, idx);
+            log.info();
         return result;
     }
 
